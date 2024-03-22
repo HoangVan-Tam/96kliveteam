@@ -1,0 +1,122 @@
+:root {
+    --light-yellow: #ffdd00;
+    --dark-yellow: #b39b00;
+    --dark-gray: rgb(43 48 53);
+}
+
+body {
+    color: white;
+    background: black;
+}
+
+h2 {
+    color: var(--dark-yellow);
+    font-size: 48px;
+}
+
+.header__area {
+    height: 100vh;
+    position: relative;
+}
+
+.header__area::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/CHHTOUR.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    opacity: 0.3;
+}
+
+.header__area-logo {
+    width: 300px;
+}
+
+.header__area-navbar {
+    background: transparent !important;
+    border-bottom: 0.5px solid var(--dark-yellow);
+}
+
+.header__area-nav-item {
+    font-size: 18px;
+    margin: auto 20px;
+}
+
+.header__area-nav-link:hover {
+    color: var(--light-yellow) !important;
+}
+
+.service__area {
+    padding: 150px 0;
+}
+
+.service__area-btn {
+    color: var(--light-yellow);
+    border: 1px solid var(--light-yellow);
+}
+
+.service__area-btn:hover {
+    background: var(--dark-yellow);
+    color: var(--dark-gray);
+}
+
+.service__area-card-item {
+    background: var(--dark-gray);
+    color: white;
+    padding: 20px 0;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.footer_area{
+    padding: 100px 0;
+    background: var(--dark-gray);;
+    color: white;
+}
+.footer_area-menu li{
+    list-style: none;
+}
+.footer_area-menu-item{
+    color: white;
+    margin: 0 20px;
+    text-decoration: none;
+}
+.footer_area-social-link{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer_area-social-link-item{
+    color: white;
+    width: 50px;
+    text-align: center;
+}
+
+.row{
+    margin: 0;
+}
+@media only screen and (max-width: 768px) {
+    .header__area-logo {
+        width: 200px;
+    }
+
+    .header__area-navbar {
+        padding: 20px 0;
+    }
+
+    .header__area-nav-item {
+        margin-top: 10px;
+        border-bottom: 0.5px solid var(--dark-yellow);
+
+    }
+
+    .mobile-mt-10 {
+        margin-top: 10px;
+    }
+}
