@@ -5,6 +5,18 @@
 .mb-60 {
     margin-bottom: 60px;
 }
+.mt-50{
+    margin-top: 50px;
+}
+.pt-100{
+    padding-top: 100px;
+}
+.md-px-50{
+    padding: 0 50px;
+}
+.w-xl-75{
+    width: 75%;
+}
 .py-150{
     padding: 150px 0;
 }
@@ -187,9 +199,14 @@ h2 {
     width: 80%;
     margin: auto;
 }
-
-.about__area-image {
+.about__area-image{
     background-image: url('../img/LFIss2.jpeg');
+}
+.about__area-image-2{
+    background-image: url('../img/ACTS.jpeg');
+}
+.about__area-image,
+.about__area-image-2 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -226,11 +243,19 @@ h2 {
     border-radius: 50%;
     color: var(--light-yellow);
     border: 1px solid var(--light-yellow);
-    font-size: 50px;
+    font-size: 30px;
     padding: 0 15px;
 }
-
+@media only screen and (max-width: 1200px) {
+    .w-xl-75{
+        width: unset;
+    }
+}
 @media only screen and (max-width: 768px) {
+
+    .md-px-50{
+        padding: unset;
+    }
     .header__area-logo {
         width: 200px;
     }
@@ -274,7 +299,8 @@ h2 {
         width: 55px;
     }
 
-    .about__area-image {
+    .about__area-image,
+    .about__area-image-2 {
         height: 350px;
         width: 90%;
         margin: 20px auto 0;
@@ -289,6 +315,7 @@ h2 {
 }
 
 @media only screen and (max-width: 425px) {
+
     .footer_area-social-link-item {
         font-size: 16pt;
         width: 35px;
