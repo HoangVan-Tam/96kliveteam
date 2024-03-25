@@ -11,7 +11,16 @@
 .pt-100{
     padding-top: 100px;
 }
-.md-px-50{
+.pt-75{
+    padding-top: 75px;
+}
+.py-75{
+    padding: 75px 0;
+}
+.pb-md-75{
+    padding-bottom: 75px;
+}
+.px-md-50{
     padding: 0 50px;
 }
 .w-xl-75{
@@ -35,7 +44,9 @@
 .mobile-mt-10 {
     margin-top: 10px;
 }
-
+.mobile{
+    display: none;
+}
 :root {
     --light-yellow: #ffdd00;
     --dark-yellow: #b39b00;
@@ -203,10 +214,19 @@ h2 {
     background-image: url('../img/LFIss2.jpeg');
 }
 .about__area-image-2{
+    background-image: url('../img/TODss3.jpeg');
+}
+.about__area-image-3{
     background-image: url('../img/ACTS.jpeg');
 }
+.about__area-image-4{
+    background-image: url('../img/Nexo\ Geo.jpeg');
+    height: 350px;
+}
 .about__area-image,
-.about__area-image-2 {
+.about__area-image-2,
+.about__area-image-3,
+.about__area-image-4 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -246,15 +266,26 @@ h2 {
     font-size: 30px;
     padding: 0 15px;
 }
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1199px) {
     .w-xl-75{
         width: unset;
     }
 }
-@media only screen and (max-width: 768px) {
-
-    .md-px-50{
+@media only screen and (max-width: 767px) {
+    .pc{
+        display: none;
+    }
+    .mobile{
+        display: block;
+    }
+    .px-md-50{
         padding: unset;
+    }
+    .pb-md-75{
+        padding-bottom: 0;
+    }
+    .h-sm-200{
+        height: 200px;
     }
     .header__area-logo {
         width: 200px;
@@ -298,15 +329,22 @@ h2 {
         font-size: 16pt;
         width: 55px;
     }
-
     .about__area-image,
-    .about__area-image-2 {
+    .about__area-image-2{
         height: 350px;
+    }
+    .about__area-image-3,
+    .about__area-image-4 {
+        height: 200px;
+    }
+    .about__area-image,
+    .about__area-image-2,
+    .about__area-image-3,
+    .about__area-image-4  {
         width: 90%;
         margin: 20px auto 0;
         background-position-y: 70%;
     }
-
     .decription__area-prev-icon,
     .decription__area-next-icon {
         font-size: 20px;
@@ -314,7 +352,7 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 424px) {
 
     .footer_area-social-link-item {
         font-size: 16pt;
