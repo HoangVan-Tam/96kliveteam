@@ -29,6 +29,9 @@
 .py-150{
     padding: 150px 0;
 }
+.py-100{
+    padding: 100px 0;
+}
 .py-50{
     padding: 50px 0;
 }
@@ -36,7 +39,9 @@
 .w-85 {
     width: 85%;
 }
-
+.h-md-100{
+    height: 100px;
+}
 .no-padding {
     padding: 0;
 }
@@ -60,7 +65,7 @@ body {
 
 h2 {
     color: var(--light-yellow);
-    font-size: 48px;
+    font-size: 56px;
 }
 
 .header__area {
@@ -223,16 +228,23 @@ h2 {
     background-image: url('../img/Nexo\ Geo.jpeg');
     height: 350px;
 }
+.about__area-image-5{
+    background-image: url('../img/YEP.jpeg');
+}
 .about__area-image,
 .about__area-image-2,
 .about__area-image-3,
-.about__area-image-4 {
+.about__area-image-4,
+.about__area-image-5 {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
-.enquiry_area{
+.enquiry_area,
+#whoweare__area,
+#outpeople__area,
+#hideservice__area{
     background-color: var(--dark-gray);
 }
 .enquiry_area-form{
@@ -266,12 +278,37 @@ h2 {
     font-size: 30px;
     padding: 0 15px;
 }
+.service__area-boutique-btn{
+    background: black;
+    color: white;
+    border: none;
+    border-bottom: 1px solid var(--light-yellow);
+    outline: none;
+}
+.panel-heading  button:before {
+    content: "";
+    float: right;
+    transition: all 0.5s;
+    border: solid var(--light-yellow);
+    border-width: 0 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+ }
+ .panel-heading.active button:before {
+     -webkit-transform: rotate(-135deg);
+     -moz-transform: rotate(-135deg);
+     transform: rotate(-135deg);
+ } 
 @media only screen and (max-width: 1199px) {
     .w-xl-75{
         width: unset;
     }
 }
 @media only screen and (max-width: 767px) {
+    .h-md-100{
+        height: unset;
+    }
     .pc{
         display: none;
     }
@@ -334,13 +371,15 @@ h2 {
         height: 350px;
     }
     .about__area-image-3,
-    .about__area-image-4 {
+    .about__area-image-4,
+    .about__area-image-5 {
         height: 200px;
     }
     .about__area-image,
     .about__area-image-2,
     .about__area-image-3,
-    .about__area-image-4  {
+    .about__area-image-4,
+    .about__area-image-5  {
         width: 90%;
         margin: 20px auto 0;
         background-position-y: 70%;
