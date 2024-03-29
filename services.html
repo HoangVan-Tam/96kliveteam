@@ -32,9 +32,20 @@
                             <a class="nav-link active header__area-nav-link" aria-current="page"
                                 href="./about.html">ABOUT</a>
                         </li>
-                        <li class="nav-item header__area-nav-item">
-                            <a class="nav-link active header__area-nav-link" aria-current="page" href="#">SERVICE</a>
-                        </li>
+                        <li class="nav-item dropdown header__area-nav-item">
+                            <a class="nav-link dropdown-toggle active active-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                SERVICE
+                            </a>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="./services.html">Hire</a></li>
+                              <li><a class="dropdown-item" href="./services.html#buynew__area">Buy new</a></li>
+                              <li><a class="dropdown-item" href="./services.html#buyused__area">Buy and sell Used Gear</a></li>
+                            </ul>
+                          </li>
+                        <!-- <li class="nav-item header__area-nav-item">
+                            <a class="nav-link active header__area-nav-link" aria-current="page"
+                                href="./services.html">SERVICE</a>
+                        </li> -->
                         <li class="nav-item header__area-nav-item">
                             <a class="nav-link active header__area-nav-link" aria-current="page"
                                 href="./contact.html">CONTACT</a>
@@ -130,10 +141,11 @@
         </div>
 
     </div>
-    <div class="container-fluid no-padding my-5">
+    <div class="container-fluid no-padding my-5" id="buynew__area">
         <div class="py-5 px-xl-5">
             <h2 class="text-center">Buy new</h2>
-            <p class="text-center mt-5 col-md-9 m-auto px-3">The 22live team have experience not only of operating in the
+            <p class="text-center mt-5 col-md-9 m-auto px-3">The 22live team have experience not only of operating in
+                the
                 world of hiring equipment, but also supplying pro-audio kit for resale, and act as a dealer for many of
                 our core brands.</p>
             <div class="row mt-5">
@@ -166,13 +178,15 @@
                     </div>
                 </div>
                 <div class="text-center col-md-4 position-relative order-2 order-md-1 mt-5 mt-md-0">
-                    <a class="btn about__area-btn mt-0 py-2 position-absolute top-100 start-50 translate-middle w-100 pc" href="./contact.html">Contact Us</a>
-                    <a class="btn about__area-btn mt-0 py-2 mobile mx-auto" href="./contact.html">Contact Us</a>              
+                    <a class="btn about__area-btn mt-0 py-2 position-absolute top-100 start-50 translate-middle pc"
+                        href="./contact.html">Contact Us</a>
+                    <a class="btn about__area-btn mt-0 py-2 mobile mx-auto" href="./contact.html">Contact Us</a>
                 </div>
                 <div class="col-md-4 ps-md-0 mt-3 mt-md-0 order-md-2">
                     <div class="panel-heading">
                         <button class="service__area-boutique-btn w-100 text-start pb-3" data-bs-toggle="collapse"
-                            href="#boutiqueservice2" role="button" aria-expanded="false" aria-controls="boutiqueservice2">
+                            href="#boutiqueservice2" role="button" aria-expanded="false"
+                            aria-controls="boutiqueservice2">
                             <span class="fs-4 text">Our Offerings</span>
                         </button>
                     </div>
@@ -199,13 +213,13 @@
                 </div>
                 <p class="text-center mt-3">Sennheiser</p>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-sm-6">
                 <div>
                     <img src="img/ACTS.jpeg" alt="" width="100%">
                 </div>
                 <p class="text-center mt-3">Sennheiser</p>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-sm-6">
                 <div>
                     <img src="img/ACTS.jpeg" alt="" width="100%">
                 </div>
@@ -223,18 +237,77 @@
                 </div>
                 <p class="text-center mt-3">Sennheiser</p>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-sm-6">
                 <div>
                     <img src="img/ACTS.jpeg" alt="" width="100%">
                 </div>
                 <p class="text-center mt-3">Sennheiser</p>
             </div>
-            <div class="col-md-3 col-6">
+            <div class="col-md-3 col-sm-6">
                 <div>
                     <img src="img/ACTS.jpeg" alt="" width="100%">
                 </div>
                 <p class="text-center mt-3">Sennheiser</p>
             </div>
+        </div>
+    </div>
+    <div class="container-fluid no-padding my-5" id="buyused__area">
+        <div class="py-5 px-xl-5">
+            <h2 class="text-center">Buy and sell Used Gear</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-center mt-5 col-md-9 m-auto px-3">The 22live team have experience not only of
+                        operating
+                        in the
+                        world of hiring equipment, but also supplying pro-audio kit for resale, and act as a dealer for
+                        many
+                        of
+                        our core brands.</p>
+                    <p class="text-center mt-3 col-md-9 m-auto px-3">We are experienced in the resale of used equipment and have an extensive contact list for the
+                        supply
+                        of used audio kit internationally. In anticipation of having our own used stocks available, we
+                        would
+                        like to start re-establishing our relationships by offering your used kit for sale. </p>
+                </div>
+                <div class="col-md-6 mt-5">
+                    <div>
+                        <div class="panel-heading">
+                            <button class="service__area-boutique-btn w-100 text-start pb-3" data-bs-toggle="collapse"
+                                href="#brokeringservice" role="button" aria-expanded="false"
+                                aria-controls="brokeringservice">
+                                <span class="fs-4 text">Brokering service</span>
+                            </button>
+                        </div>
+                        <div class="panel-collapse collapse in mt-4" id="brokeringservice">
+                            <p>22live will help to sell your kit if we feel we can help you find a buyer. We will list
+                                your
+                                equipment in our online store and facilitate sales as and when we find buyers.</p>
+                            <p class="mt-3">In certain cases we may consider buying for stock or looking at part
+                                exchange
+                                opportunities. All offers will be assessed on a case by case basis.</p>
+                        </div>
+                        <div class="panel-heading mt-3">
+                            <button class="service__area-boutique-btn w-100 text-start pb-3" data-bs-toggle="collapse"
+                                href="#lookingfor" role="button" aria-expanded="false"
+                                aria-controls="lookingfor">
+                                <span class="fs-4 text">We are looking for</span>
+                            </button>
+                        </div>
+                        <div class="panel-collapse collapse in mt-4" id="lookingfor">
+                            <p>L-Acoustics</p>
+                            <p>d&b audioteknik</p>
+                            <p>Martin Audio</p>
+                            <p>JBL (line array)</p>
+                            <p>DiGiCo</p>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <a class="btn about__area-btn py-2 mt-3" href="./contact.html">Contact Us</a>
+                </div>
+            </div>
+
         </div>
     </div>
     <footer>
