@@ -244,7 +244,8 @@ h2 {
 .enquiry_area,
 #whoweare__area,
 #outpeople__area,
-#hideservice__area{
+#hideservice__area,
+#buynew__area-brand{
     background-color: var(--dark-gray);
 }
 .enquiry_area-form{
