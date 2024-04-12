@@ -74,6 +74,7 @@
 }
 
 body {
+    font-family: "Roboto", sans-serif;
     color: white;
     background: black;
 }
@@ -88,7 +89,8 @@ h2 {
     position: relative;
 }
 
-.header__area::before {
+.header__area::before,
+.service-header__area::before {
     content: "";
     position: absolute;
     top: 0;
@@ -100,7 +102,9 @@ h2 {
     background-position: center;
     opacity: 0.3;
 }
-
+.service-header__area::before {
+    background-image: url(../img/TODss3.jpeg);
+}
 .header__area-logo {
     width: 300px;
 }
